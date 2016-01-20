@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#1b1a1a"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ninjawebzen.weatherapp.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/cityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#37a4d7"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="Fort Lauderdale, US" />
+    
+    <ImageView
+        android:id="@+id/thumbnailIcon"
+        android:layout_below="@+id/cityText"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+
+        />
+    <TextView
+        android:id="@+id/tempText"
+        android:text="25 Deg"
+        android:textStyle="normal"
+        android:textColor="#429ecf"
+        android:layout_below="@+id/cityText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="42sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/windText"
+        android:textColor="#429ecf"
+        android:textSize="16sp"
+        android:text="Wind"
+        android:layout_below="@id/thumbnailIcon"
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/cloudText"
+        android:textColor="#429ecf"
+        android:textSize="16sp"
+        android:text="Cloud"
+        android:layout_below="@id/windText"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/pressureText"
+        android:textColor="#429ecf"
+        android:textSize="16sp"
+        android:text="Pressure"
+        android:layout_below="@id/cloudText"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/humidText"
+        android:textColor="#429ecf"
+        android:textSize="16sp"
+        android:text="Humidity"
+        android:layout_below="@id/pressureText"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/riseText"
+        android:textColor="#429ecf"
+        android:textSize="16sp"
+        android:text="Sunrise"
+        android:layout_below="@id/humidText"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/setText"
+        android:textColor="#429ecf"
+        android:textSize="16sp"
+        android:text="Sunset"
+        android:layout_below="@id/riseText"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/updateText"
+        android:textColor="#429ecf"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:text="Last Updated"
+        android:layout_below="@id/setText"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+
